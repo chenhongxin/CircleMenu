@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="roundColor" format="reference" /> <!-- 圆的颜色 -->
+    <attr name="arc_radius" format="dimension" />
+    <attr name="arc_scaleSize" format="float" /> <!-- 点击项缩放大小 -->
+    <attr name="arc_duration" format="integer" /> <!-- 动画时间 -->
+    <attr name="arc_canRotation" format="boolean" />
+    <attr name="arc_direction">
+        <!--顺时针-->
+        <enum name="clockwise" value="0" />
+        <!--逆时针-->
+        <enum name="anti_clockwise" value="1" />
+    </attr>
+    <attr name="arc_menu_position">
+        <!--Left, Right, Top, Buttom, LeftTop, LeftButtom, RightTop, RightButtom-->
+        <enum name="left_center" value="0" />
+        <enum name="right_center" value="1" />
+        <enum name="top_center" value="2" />
+        <enum name="bottom_center" value="3" />
+        <enum name="left_top" value="4" />
+        <enum name="left_bottom" value="5" />
+        <enum name="right_top" value="6" />
+        <enum name="right_bottom" value="7" />
+        <enum name="center" value="8" />
+    </attr>
+
+    <declare-styleable name="ArcMenu">
+        <attr name="arc_radius" />
+        <attr name="arc_scaleSize" />
+        <attr name="arc_duration" />
+        <attr name="arc_canRotation" />
+        <attr name="arc_direction" />
+        <attr name="arc_menu_position" />
+    </declare-styleable>
+</resources>
